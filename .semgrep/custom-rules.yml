@@ -1,5 +1,5 @@
 rules:
-- id: semgrep-random-seed
+- id: random-seed
   pattern: random.seed(...)
   message: seed function is insecure...
   severity: WARNING
