@@ -4,3 +4,8 @@ rules:
   message: seed function is insecure...
   severity: WARNING
   languages: [python]
+- id: random-getstate
+  pattern: random.getstate(...)
+  message: get state function is insecure....
+  severity: WARNING
+  languages: [python]
