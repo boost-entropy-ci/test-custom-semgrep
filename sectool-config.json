@@ -1,9 +1,0 @@
-{
-  "violation-policy": [
-    {
-      "rules": {
-        "semgrep-random-seed": "alert"
-      }
-    }
-  ]
-}
