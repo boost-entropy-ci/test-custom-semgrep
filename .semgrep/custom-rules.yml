@@ -1,0 +1,6 @@
+rules:
+- id: semgrep-random-seed
+  pattern: random.seed(...)
+  message: seed function is insecure...
+  severity: WARNING
+  languages: [python]
