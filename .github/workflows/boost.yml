@@ -37,7 +37,7 @@ jobs:
           exec_command: docker run -v %CWD%:/src returntocorp/semgrep:0.56.0 --disable-version-check --no-rewrite-rule-ids -q --sarif --config /src/.semgrep/custom-rules.yml
   complete_scan:
     name: Complete Scan
-    needs: [scan_job, semgrep_job]
+    needs: [scan_job]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
